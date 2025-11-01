@@ -27,8 +27,9 @@
                                 
             echo 'Cadastro realizado com sucesso! <a href="login.html">Login</a>';
             
-            } catch (mysqli_sql_exception $e ) {}
+            } catch (mysqli_sql_exception $e ) {
             echo "Erro ao cadastrar: " . $e->getMessage();
    
 }
+
 ?>
